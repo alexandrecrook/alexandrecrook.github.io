@@ -1,18 +1,20 @@
-//** Left to do: finish logo; insert logo; sign up for adobe; decide on colors and fonts; add and build images/graphics; fix click box; add effects; minify; **//
+/* Left to do: finish logo; insert logo; sign up for adobe; decide on colors and fonts; add and build images/graphics; fix click box; add effects; minify; alt colors: 788aa9 for header */
 /* add reds and greens as accent colors to logo */
-html {
+html { 
 }
 body {
     width:auto;
     border:none;
     padding:0px;
     margin:0px;
-    background-color:#eaeaea;
+    background-color:#f3fafa;
     font-family:sans-serif;
+    color: #58595b;
 }
 .navbar {
     width:100%;
-    height:8%;
+    height:50%;
+    max-height:100px;
     background-color: #3f61ad;
     color:#ffffff;
     font-family:sans-serif;
@@ -28,7 +30,8 @@ body {
     align-items: center;
 }
 .logo {
-    font-family: sans-serif;
+    max-height: auto;
+    max-width:145px;
 }
 .nav_container {
     width: 70%;
@@ -36,12 +39,12 @@ body {
     max-height:1000px;
     float: right;
     display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
+    justify-content:flex-end;
+    align-items:center;
 }
 .nav {
-    width:inherit; 
-    height: inherit;
+    width:80%; 
+    height: auto;
     float:right;
     display:inline;  
 }
@@ -59,25 +62,27 @@ body {
     width: 100%;
     height:auto;
     margin:0;
-    color: #2e2d2c;
+    color: #58595b;
 }
 #call {
     display:inline-block;
     justify-content: center;
     align-items: center;
-    margin-top:3%;
+    margin-top:8%;
 }
 .call {
     font-family:sans-serif;
     font-size: 2.0em;
     text-align: center;
     padding: 0 20% 0 20%;
+    line-height: 1.9em;
 }
 #action {
     display:flex;
     justify-content: center;
     align-items: center;
     width:100%;
+    margin-top: 4.5%;
 }
 .action {
     font-family:sans-serif;
@@ -101,7 +106,7 @@ body {
     height:auto;
     padding: none;
     font-family:sans-serif;
-    margin-top: 3%;
+    margin-top: 6%;
 }
 .one_third_header {
     text-align: center;
@@ -109,23 +114,36 @@ body {
 }
 .one_third_text {
     text-align: center;
-    padding-left: 10%; 
-    padding-right: 10%;
+    padding-left: 12%; 
+    padding-right: 12%;
     font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: 12%;
 }
 #footer {
-    background-color: #1e305f;
-    height:15%;
-    position:fixed;
-    bottom:0;
-    left:0;
-    display: inline-block;    
+    background-color: #3e79c4;
+    height:20%;
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 10%;
 }
 .contact {
+    width: auto;
+    height: auto;
     color:inherit; 
     font-family: inherit;
     float:left;
+    padding-left:3%;
+    margin-top:2%;
+    line-height:1.5;
+    text-align: center;
 }
 .social_and_email {
     float:right;
+    margin-top:2%;
+    padding-right:3%;
+    text-align: center;
+    width:auto;
+    height:auto;
+    line-height:1.5em;
 }
