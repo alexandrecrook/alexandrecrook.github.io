@@ -7,7 +7,7 @@ body {
     border:none;
     padding:0px;
     margin:0px;
-    background-color:#f3fafa;
+    /*background-color:#f3fafa;*/
     font-family:sans-serif;
     color: #58595b;
 }
@@ -60,15 +60,25 @@ body {
 }
 .sub_container {
     width: 100%;
-    height:auto;
+    height:30%;
     margin:0;
     color: #58595b;
+}
+#call_to_action {
+    background-image: url(start%20up%202.png);
+    height:auto;
+    width: 100%;
+    color: #fff;
+}
+#call_to_action_image {
+    max-width: 1800px
 }
 #call {
     display:inline-block;
     justify-content: center;
     align-items: center;
-    margin-top:7%;
+    margin-top:8%;
+    color:#fff;
 }
 .call {
     font-family:sans-serif;
@@ -82,50 +92,90 @@ body {
     justify-content: center;
     align-items: center;
     width:100%;
-    margin-top: 4.5%;
+    height:20%;
 }
 .action {
     font-family:sans-serif;
     font-size: 1.2em;
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid #fff;
     width: auto;
     padding: 1% 1%; 
+    color:#fff;
+    border-radius: 6px;
 }
 .action a {
     text-decoration: none;
     color: inherit;
 }
-#one_third {
-    width:100%;
+.action:hover {
+    background:#fff;
+    color:#58595b;
+    border:none;
+}
+#left {
     display:flex;
-    padding-top:3%
-}
-.one_third {
-    width:100%;
+    flex-direction: column;
     height:auto;
-    padding: none;
-    font-family:sans-serif;
-    margin-top: 6%;
+    justify-content: center;
+    align-items: flex-start;
+    height:40%;
+    background:#fff;
 }
-.one_third_header {
+.one_third_header_left {
+    font-size: 1.7em;
+    max-width:20%;
+    margin-left:3%;
+}
+.one_third_left {
+    font-size: 1.2em;
+    max-width: 30%;
+    margin-left:4%;
+    margin-top: 2%;
+}
+#center {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height:40%;
+    Color: #ffffff;
+    background:rgba(30, 48, 95, 1);
+}
+.one_third_header_center {
     text-align: center;
     font-size: 1.7em;
 }
-.one_third_text {
+.one_third_center {
     text-align: center;
-    padding-left: 12%; 
-    padding-right: 12%;
     font-size: 1.2em;
-    line-height: 1.4em;
-    margin-top: 12%;
+    max-width: 30%;
+    margin-top: 2%
+}
+#right {
+    display:flex;
+    justify-content: flex-end;
+    flex-direction:column-reverse;
+    background:#fff;
+    height:inherit
+}
+.one_third_header_right {
+    font-size: 1.7em;
+    max-width: 20%;
+    width:20%;
+    height:auto;   
+}
+.one_third_right {
+    max-width 30%;
+    width:30%;
+    font-size: 1.2em;
 }
 #footer {
     background-color: #3e79c4;
     height:20%;
     display: inline-block;
     color: #ffffff;
-    margin-top: 10%;
+    
 }
 .contact {
     width: auto;
